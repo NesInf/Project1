@@ -220,7 +220,7 @@ int main(int argc, char **argv)
                                         shell_pid = getpid();
                                         sub_shell_depth++;
                                         if (sub_shell_depth >= 3){
-                                                fprintf(stderr, "Too many!\n");
+                                                fprintf(stderr, "Too deep!\n");
                                                 return 0;
                                         }
                                 } else {
